@@ -39,11 +39,5 @@ public class DaoPersonasORM implements  DaoPersonas{
         }
     }
 
-    @Override
-    public void clear() {
-        try {
-            daopersonasORM.delete(getAll());
-        } catch (SQLException throwables) {
-        }
-    }
+
 }

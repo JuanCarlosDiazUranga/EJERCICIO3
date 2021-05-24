@@ -14,7 +14,7 @@ public class Persona {
     @JacksonXmlProperty(isAttribute = true)
     @DatabaseField
     private String telefono;
-    public  Persona(Object o, String nombreCliente, Object o1){}
+    public  Persona(){}
 
     public Persona(String nombre, String telefono) {
         this.nombre = nombre;

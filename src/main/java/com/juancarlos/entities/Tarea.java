@@ -32,17 +32,7 @@ public class Tarea {
         return nombre;
     }
 
-    public String getDescripcion() {
-        return descripcion;
-    }
 
-    public Persona getPersona() {
-        return persona;
-    }
-
-    public Urgencia getUrgencia() {
-        return urgencia;
-    }
 
     @Override
     public String toString() {

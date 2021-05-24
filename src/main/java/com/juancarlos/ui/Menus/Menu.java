@@ -66,10 +66,12 @@ public class Menu {
             Scanner scanner = new Scanner(System.in);
             int opcion = Integer.parseInt(scanner.nextLine());
             if (opcion == 1) {
+                Tarea tarea = new Tarea(null,null,null,null);
                 System.out.print("A quien vas a encargar la tarea?");
-DaoFactory.getInstance().getDaoTareas(Source.XML).getAll();
+                DaoFactory.getInstance().getDaoTareas(Source.XML).getAll();
+                DaoFactory.getInstance().getDaoTareas(Source.XML).crear(tarea);
             }else if (opcion == 2) {
-
+                DaoFactory.getInstance().getDaoTareas(Source.XML).getAll();
             }
             else if(opcion == 0){
 

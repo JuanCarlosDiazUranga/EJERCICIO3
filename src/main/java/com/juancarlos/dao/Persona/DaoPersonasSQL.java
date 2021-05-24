@@ -46,18 +46,6 @@ public class DaoPersonasSQL implements  DaoPersonas{
     }
 
 
-    @Override
-    public void clear() {
-        try {
-            Statement statement = DBConnectionSQL.getInstance().createStatement();
-            statement.execute("delete from personas");
-        }catch (SQLException exception) {
-            if (exception.getErrorCode() == 1062) {
-                System.err.println("error lista de personas");
-            } else {
-                System.err.println(exception.getMessage());
-            }
-        }
-    }
+
     }
 
